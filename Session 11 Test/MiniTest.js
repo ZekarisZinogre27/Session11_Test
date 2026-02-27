@@ -9,7 +9,7 @@ let products = [
 function findProductById(idToFind) {
     return products.find(product => product.id === idToFind);
 }
-let inputId = prompt("Nhập Id sản phẩm bạn tìm kiếm (Ví dụ: P01, P03):");
+let inputId = prompt("Nhập Id sản phẩm bạn tìm kiếm:");
 let result = findProductById(inputId);
 if (result) {
     console.log(`Tìm thấy: ${result.name} - Giá: $${result.price}`);
